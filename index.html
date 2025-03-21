@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <!-- Main heading -->
+    <h1>Welcome to My Webpage</h1>
+
+    <!-- Ordered list with Roman numerals -->
+    <h2>Ordered List with Roman Numerals</h2>
+    <ol type="I">
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+      <li>Fourth item</li>
+      <li>Fifth item</li>
+    </ol>
+
+    <!-- External image from Pexels -->
+    <h2>Beautiful Image from Pexels</h2>
+    <img
+      src="https://images.pexels.com/photos/1670187/pexels-photo-1670187.jpeg"
+      alt="Scenic Mountain"
+      width="600"
+    />
+
+    <!-- Table of 5 contacts -->
+    <h2>Contacts</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>123 Elm St, Springfield</td>
+          <td>(555) 123-4567</td>
+          <td>john.doe@example.com</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>456 Oak St, Shelbyville</td>
+          <td>(555) 987-6543</td>
+          <td>jane.smith@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary Johnson</td>
+          <td>789 Pine St, Capital City</td>
+          <td>(555) 543-2109</td>
+          <td>mary.johnson@example.com</td>
+        </tr>
+        <tr>
+          <td>James Brown</td>
+          <td>101 Maple Ave, Townsville</td>
+          <td>(555) 112-2334</td>
+          <td>james.brown@example.com</td>
+        </tr>
+        <tr>
+          <td>Emily White</td>
+          <td>202 Birch Rd, Rivertown</td>
+          <td>(555) 321-9876</td>
+          <td>emily.white@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="/submit" method="POST">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <!-- Name field -->
+        <label for="name">Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        /><br /><br />
+
+        <!-- Email field -->
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        /><br /><br />
+
+        <!-- Password field -->
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Create a password"
+          required
+          minlength="8"
+        /><br /><br />
+
+        <!-- Date of birth field -->
+        <label for="dob">Date of Birth:</label><br />
+        <input type="date" id="dob" name="dob" required /><br /><br />
+
+        <!-- Gender radio buttons -->
+        <label>Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br /><br />
+
+        <!-- Country dropdown -->
+        <label for="country">Country:</label><br />
+        <select id="country" name="country" required>
+          <option value="usa">United States</option>
+          <option value="canada">Canada</option>
+          <option value="uk">United Kingdom</option>
+          <option value="australia">Australia</option> </select
+        ><br /><br />
+
+        <!-- Hobbies checkboxes -->
+        <label>Hobbies:</label><br />
+        <input type="checkbox" id="reading" name="hobbies" value="reading" />
+        <label for="reading">Reading</label><br />
+        <input
+          type="checkbox"
+          id="traveling"
+          name="hobbies"
+          value="traveling"
+        />
+        <label for="traveling">Traveling</label><br />
+        <input type="checkbox" id="coding" name="hobbies" value="coding" />
+        <label for="coding">Coding</label><br /><br />
+
+        <!-- Submit button -->
+        <input type="submit" value="Register" />
+      </fieldset>
+    </form>
+  </body>
+</html>
